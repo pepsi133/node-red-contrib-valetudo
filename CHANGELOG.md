@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/alexkn/node-red-contrib-valetudo/compare/v2.3.0...v2.3.1) (2021-10-07)
+
+
+### Bug Fixes
+
+* ignore missing entities ([e1cff96](https://github.com/alexkn/node-red-contrib-valetudo/commit/e1cff9654b902cc27e22b9dc93546cade0898a74)), closes [#15](https://github.com/alexkn/node-red-contrib-valetudo/issues/15)
+
 ## [2.3.0](https://github.com/alexkn/node-red-contrib-valetudo/compare/v2.2.0...v2.3.0) (2021-01-10)
 
 
