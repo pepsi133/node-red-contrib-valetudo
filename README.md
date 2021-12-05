@@ -11,6 +11,7 @@ Supports:
 - JSON string map from Valetudo < 0.6.0
 - JSON string map from Valetudo >= 0.6.0
 - deflated JSON string map from Valetudo >= 2021.01.0b0 (optionally base64 encoded)
+- V2 Maps from Valetudo >= 2021.12.0
 
 Input should be an mqtt node from valetudo map_data topic, e.g. `valetudo/robot/map_data`.
 

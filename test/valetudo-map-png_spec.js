@@ -92,6 +92,24 @@ describe("valetudo-map-png Node", function () {
 
             msg.payload.should.deepEqual(expectedPng);
         });
+
+        it("should draw v2 JSON string from Valetudo 2021.12.0 with Firmware 2008 correctly", async function() {
+            let flow = [
+                { id: "n1", type: "valetudo-map-png", wires:[["n2"]], drawPath: true, drawCharger: true, drawRobot: true, scale: 4 },
+                { id: "n2", type: "helper" }
+            ];
+            await helper.load(mapPngNode, flow);
+            let n1 = helper.getNode("n1");
+            let n2 = helper.getNode("n2");
+            let data = await fs.readFile("./test/data/FW2008_0.6.0_with_segments_v2.json", { encoding: "utf-8" });
+            let expectedPng = await fs.readFile("./test/data/FW2008_0.6.0_with_segments.png");
+
+            let promise = helper.createTestPromise(n1, n2);
+            n1.receive({ payload: data });
+            let msg = await promise;
+
+            msg.payload.should.deepEqual(expectedPng);
+        });
     });
 
     describe("Valetudo RE", async function() {
