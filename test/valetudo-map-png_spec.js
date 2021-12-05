@@ -83,8 +83,8 @@ describe("valetudo-map-png Node", function () {
             await helper.load(mapPngNode, flow);
             let n1 = helper.getNode("n1");
             let n2 = helper.getNode("n2");
-            let data = await fs.readFile("./test/data/FW2008_0.6.0_with_segments_v2.json", { encoding: "utf-8" });
-            let expectedPng = await fs.readFile("./test/data/FW2008_0.6.0_with_segments.png");
+            let data = await fs.readFile("./test/data/FW2008_2021.12.0_with_segments.json", { encoding: "utf-8" });
+            let expectedPng = await fs.readFile("./test/data/FW2008_2021.12.0_with_segments.png");
 
             let promise = helper.createTestPromise(n1, n2);
             n1.receive({ payload: data });
