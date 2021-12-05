@@ -8,7 +8,6 @@ A node to convert Valetudo map_data to a png image which can be send to a dashbo
 
 Supports:
 
-- JSON string map from Valetudo < 0.6.0
 - JSON string map from Valetudo >= 0.6.0
 - deflated JSON string map from Valetudo >= 2021.01.0b0 (optionally base64 encoded)
 - V2 Maps from Valetudo >= 2021.12.0
@@ -27,9 +26,3 @@ HTML for template node:
     <img src="data:image/png;base64,{{msg.payload}}" style="width: 100%;height: auto" />
 </div>
 ```
-
-## valetudo-parse-binmap
-
-A node to convert Valetudo RE binary map data to a JSON string which can be send to the map-png node.
-
-Binary map data is only sent by [Valetudo RE](https://github.com/rand256/valetudo).
