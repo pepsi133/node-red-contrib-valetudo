@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/alexkn/node-red-contrib-valetudo/compare/v2.3.1...v3.0.0) (2021-12-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for old maps and Valetudo RE
+
+### Features
+
+* add support for V2 Maps ([c5dad56](https://github.com/alexkn/node-red-contrib-valetudo/commit/c5dad5661b74e86e510a289a7b01857506171ff1)), closes [#16](https://github.com/alexkn/node-red-contrib-valetudo/issues/16)
+
+
+* drop support for old maps and Valetudo RE ([289a413](https://github.com/alexkn/node-red-contrib-valetudo/commit/289a4138fd24d73e03be8cce55cf9eb57ee21148))
+
 ### [2.3.1](https://github.com/alexkn/node-red-contrib-valetudo/compare/v2.3.0...v2.3.1) (2021-10-07)
 
 
